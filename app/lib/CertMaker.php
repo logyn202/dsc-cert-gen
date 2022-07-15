@@ -32,7 +32,7 @@ class CertMaker
             $max_len = $temp1['branch']['max_len'] ?? 23;
             $font_size = $temp1['branch']['s'];
             $font_height = 25;
-            $lines = explode("\n", wordwrap("Developer Student Clubs ".$branch, $max_len));
+            $lines = explode("\n", wordwrap("Google Developer Student Clubs ".$branch, $max_len));
             $y = $center_y - ((count($lines) - 1) * $font_height);
             foreach ($lines as $line) {
                 $img->text($line, $temp1['branch']['x'], $y, function ($font) use ($font_size,$temp1) {
