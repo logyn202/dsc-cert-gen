@@ -102,7 +102,7 @@ class CertMaker
                     $font->file($temp1['sig']['f']);
                 });
             if ($temp1['branch']['full_name'])
-                $branch = "DSC ".$branch;
+                $branch = "GDSC ".$branch;
             $img->text(strtoupper($branch)." LEADER",
                 $temp1['sig_r']['x'], $temp1['sig_r']['y'], function ($font) use ($temp1) {
                     $font->size($temp1['sig_r']['s']);
